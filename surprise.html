@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<button class="music-btn" onclick="document.getElementById('bgm').play()">
+🎵 play
+</button>
+
+<!-- 🌟 CONTENT -->
+<div class="card">
+  <h1>💙 Surprise</h1>
+
+  <button onclick="unlock()">tap to open</button>
+
+  <p id="secret"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
