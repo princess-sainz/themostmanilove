@@ -1,18 +1,24 @@
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   font-family: Arial;
+}
+
+/* 🌸 BACKGROUND FULL SCREEN */
+body {
   text-align: center;
   color: #2b3a55;
 
-  /* 🌸 BACKGROUND UTAMA */
   background-image: url("bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  min-height: 100vh;
 }
 
-/* overlay biar tulisan kebaca */
+/* overlay biar teks kebaca */
 body::before {
   content: "";
   position: fixed;
@@ -24,7 +30,7 @@ body::before {
   z-index: -1;
 }
 
-/* CARD BESAR */
+/* 📦 CARD BESAR */
 .card {
   margin-top: 140px;
   display: inline-block;
@@ -35,12 +41,21 @@ body::before {
   max-width: 500px;
 }
 
-/* TEXT BESAR */
-h1 { font-size: 34px; }
-h2 { font-size: 24px; }
-p  { font-size: 18px; line-height: 1.6; }
+/* 📝 TEXT BESAR */
+h1 {
+  font-size: 34px;
+}
 
-/* BUTTON */
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 🔘 BUTTON BESAR */
 button {
   font-size: 18px;
   padding: 14px 22px;
@@ -51,7 +66,7 @@ button {
   margin-top: 15px;
 }
 
-/* BACK BUTTON */
+/* 🔙 BACK BUTTON (SEMUA HALAMAN) */
 .back {
   position: fixed;
   bottom: 15px;
@@ -62,11 +77,17 @@ button {
   text-decoration: none;
   color: #2b3a55;
   font-size: 14px;
+  z-index: 999;
 }
 
-/* FOTO SURPRISE (INI PAKAI foto.jpg) */
+/* 📸 FOTO SURPRISE */
 .photo {
   width: 100%;
   border-radius: 20px;
   margin-top: 15px;
-  }
+}
+
+/* 🎵 HIDE AUDIO */
+audio {
+  display: none;
+}
