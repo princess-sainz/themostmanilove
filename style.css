@@ -2,78 +2,71 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #eaf6ff;
   text-align: center;
   color: #2b3a55;
-  overflow: hidden;
+
+  /* 🌸 BACKGROUND UTAMA */
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* overlay biar tulisan kebaca */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.55);
+  z-index: -1;
 }
 
 /* CARD BESAR */
 .card {
-  margin-top: 120px;
+  margin-top: 140px;
   display: inline-block;
   background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.card.big {
-  max-width: 420px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 500px;
 }
 
 /* TEXT BESAR */
-.text-big {
-  font-size: 18px;
-  line-height: 1.6;
-}
+h1 { font-size: 34px; }
+h2 { font-size: 24px; }
+p  { font-size: 18px; line-height: 1.6; }
 
-/* BUTTON BESAR */
-.btn-big {
+/* BUTTON */
+button {
   font-size: 18px;
   padding: 14px 22px;
-  border-radius: 14px;
+  border-radius: 15px;
   border: none;
   background: #a8d0ff;
   cursor: pointer;
+  margin-top: 15px;
 }
 
-/* BACK BUTTON (ALL PAGE) */
+/* BACK BUTTON */
 .back {
   position: fixed;
   bottom: 15px;
   left: 15px;
-  text-decoration: none;
   background: #a8d0ff;
-  padding: 10px 15px;
+  padding: 12px 16px;
   border-radius: 12px;
+  text-decoration: none;
   color: #2b3a55;
+  font-size: 14px;
 }
 
-/* MUSIC AUTO BUTTON HIDDEN (optional) */
-audio {
-  display: none;
-}
-
-/* PHOTO */
+/* FOTO SURPRISE (INI PAKAI foto.jpg) */
 .photo {
   width: 100%;
-  border-radius: 15px;
-  margin-top: 10px;
-}
-
-/* SHOOTING STAR */
-.star {
-  position: fixed;
-  top: -10px;
-  width: 2px;
-  height: 80px;
-  background: linear-gradient(white, transparent);
-  animation: fall linear infinite;
-  opacity: 0.8;
-}
-
-@keyframes fall {
-  0% {transform: translateY(0) rotate(45deg);}
-  100% {transform: translateY(110vh) rotate(45deg); opacity: 0;}
-}
+  border-radius: 20px;
+  margin-top: 15px;
+  }
