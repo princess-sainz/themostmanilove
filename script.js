@@ -3,7 +3,7 @@ window.addEventListener("click", function () {
   if (music) music.play();
 });
 
-let text = "Halo adek, happy birthday ya sayang.
+let text = `Halo adek, happy birthday ya sayang.
 
 Adek udah makin besar sekarang, dan ibun cuma mau bilang selamat ulang tahun. Semoga hari ini jadi hari yang bagus buat kamu, walaupun mungkin nggak ada yang spesial banget, tapi ibun harap kamu tetap ngerasa disayang.
 
@@ -23,7 +23,8 @@ Kalau ada mimpi kamu, pelan-pelan aja jalanin. Nggak apa-apa kalau belum tercapa
 
 Happy birthday ya, adek.
 
-Ibun sayang kamu, always.🤍";
+Ibun sayang kamu, always.🤍`;
+
 let i = 0;
 
 function typeWriter() {
