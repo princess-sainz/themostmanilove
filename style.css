@@ -1,13 +1,14 @@
 
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial;
   background: linear-gradient(135deg, #cfe8ff, #eaf6ff);
-  color: #2b3a55;
   text-align: center;
+  color: #2b3a55;
+  overflow: hidden;
 }
 
-/* card biar kayak cute box */
+/* card */
 .card {
   margin-top: 120px;
   display: inline-block;
@@ -19,30 +20,47 @@ body {
   animation: fadeIn 1s ease-in;
 }
 
-/* tombol */
+/* button */
 button {
   background: #a8d0ff;
   border: none;
-  padding: 12px 20px;
+  padding: 12px 18px;
   border-radius: 15px;
-  font-size: 16px;
-  cursor: pointer;
   margin-top: 15px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 button:hover {
-  background: #7fbfff;
   transform: scale(1.05);
+  background: #7fbfff;
 }
 
-/* animasi */
+/* music button */
+.music-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+/* fade animation */
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(20px);}
   to {opacity: 1; transform: translateY(0);}
 }
 
-/* text cute */
-h1 {
-  color: #4a6fa5;
-  }
+/* stars */
+.star {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {transform: translateY(0); opacity: 0.8;}
+  100% {transform: translateY(-20px); opacity: 0.2;}
+}
