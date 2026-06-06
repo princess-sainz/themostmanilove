@@ -7,14 +7,25 @@
 
 <body>
 
-  <div class="card">
-    <h1>Happy Birthday 🎂</h1>
-    <h3>adek sayang ibun kan?</h3>
+<!-- 🎵 MUSIC (paling atas body) -->
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
 
-    <a href="ucapan.html">
-      <button>sayang 💙</button>
-    </a>
-  </div>
+<button class="music-btn" onclick="document.getElementById('bgm').play()">
+🎵 play
+</button>
 
+<!-- 🌟 CONTENT -->
+<div class="card">
+  <h1>Happy Birthday 🎂</h1>
+  <h3>adek sayang ibun kan?</h3>
+
+  <a href="ucapan.html">
+    <button>sayang 💙</button>
+  </a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
