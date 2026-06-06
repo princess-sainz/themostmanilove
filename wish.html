@@ -7,17 +7,30 @@
 
 <body>
 
-  <div class="card">
-    <h1>My Wish 💙</h1>
+<!-- 🎵 MUSIC -->
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
 
-    <p>
-      ibun selalu doain kamu,<br>
-      semoga semua impian kamu tercapai,<br>
-      dan kamu selalu dikelilingi orang yang sayang kamu 🤍
-    </p>
+<button class="music-btn" onclick="document.getElementById('bgm').play()">
+🎵 play
+</button>
 
-    <h3>love you always ✨</h3>
-  </div>
+<!-- 🌟 CONTENT -->
+<div class="card">
+  <h1>My Wish 💙</h1>
 
+  <p>
+    ibun selalu doain kamu,<br>
+    semoga kamu selalu bahagia,<br>
+    sehat, dan semua impian kamu tercapai 🤍
+  </p>
+
+  <a href="surprise.html">
+    <button>last surprise 🎁</button>
+  </a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
